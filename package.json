@@ -21,7 +21,7 @@
     "web": "expo start --web",
     "desktop": "electron desktop/main.js",
     "build:desktop": "npx expo export -p web && electron-builder",
-    "deploy": "gh-pages -d assets"
+    "deploy": "node -e \"const fs=require('fs'); fs.mkdirSync('gh-dist',{recursive:true}); fs.copyFileSync('assets/netflix_clone.html', 'gh-dist/index.html');\" && npx gh-pages -d gh-dist"
   },
   "private": true,
   "overrides": {
