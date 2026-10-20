@@ -1,7 +1,7 @@
 {
   "name": "kvix",
   "version": "1.0.0",
-  "homepage": "https://your-username.github.io/kvix",
+  "homepage": "https://ko24601.github.io/KFLIX",
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
     "expo": "~57.0.0",
@@ -21,8 +21,7 @@
     "web": "expo start --web",
     "desktop": "electron desktop/main.js",
     "build:desktop": "npx expo export -p web && electron-builder",
-    "predeploy": "npx expo export -p web",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d assets"
   },
   "private": true,
   "overrides": {
